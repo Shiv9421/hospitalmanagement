@@ -1,0 +1,31 @@
+<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
+<script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script
+	src="webjars/bootstrap-datepicker/1.0.1/js/bootstrap-datepicker.js"></script>
+<script>
+	
+	$('#joiningDate').datepicker({
+		format : 'dd/mm/yyyy'
+	});
+	$('#date').datepicker({
+		format : 'dd/mm/yyyy'
+	});
+</script>
+
+
+
+
+<div class="container" align="center">
+    <hr color="lite blue">
+
+    Copyright &copy; 2022 All Rights Reserved by Jyothi Raj :<a href="#">Hospital Management Tool</a>
+</div>
+
+</body>
+<script src="webjars/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+<script src="webjars/jquery/2.1.4/jquery.min.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: hospital-management-tool
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: hemap
+Implementation-Vendor-Id: com.springboot.hospitalmanagement
+Build-Jdk: 1.8.0_291
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/hospital-management-tool
+Created-By: Maven Integration for Eclipse
+
