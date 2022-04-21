@@ -4,7 +4,7 @@
     <div>
         <div id="formContent">
             <br/>
-            <h3><font color="red"> ${errorMessage}</font></h3>
+            
         <div id="login">
             <h2 class="text-center text-white pt-5">Login form</h2>
             <div class="container">
@@ -22,7 +22,7 @@
                                     <input type="password" name="password" id="password" class="form-control" required>
                                 </div>
                                 <div class="form-group">
-                                 <%--   <label for="remember-me" class="text-info"><span>Remember me</span> <span><input id="remember-me" name="remember-me" type="checkbox"></span></label><br>--%>
+                                 <%--   <label for="remember-me" class="text-info"><span>Remember me</span> <span><input id="remember-me" name="remember-me" type="checkbox"></span></label><br>--%>
                                     <input type="submit" name="submit" class="btn btn-info btn-md" value="submit">
                                 </div>
                                 <div id="register-link" class="text-right">

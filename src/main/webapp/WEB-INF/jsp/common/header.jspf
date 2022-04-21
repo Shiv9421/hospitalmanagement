@@ -5,7 +5,7 @@
 <html>
 <head>
 <title>Hospital Management</title>
-<link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css"
+<link href="bootstrap.css"
 	rel="stylesheet">
 
 <style>

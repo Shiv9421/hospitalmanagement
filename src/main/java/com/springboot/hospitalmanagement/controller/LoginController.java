@@ -40,15 +40,5 @@ public class LoginController
         return "home";
     }
 
-    @RequestMapping("/about")
-    public String logoutUser(ModelMap model)
-    {
-        return "aboutpage";
-    }
-
-    @RequestMapping("/contactus")
-    public String contactUsPage(ModelMap model)
-    {
-        return "contactus";
-    }
+  
 }

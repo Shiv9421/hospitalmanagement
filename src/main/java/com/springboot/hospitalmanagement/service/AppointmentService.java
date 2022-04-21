@@ -2,10 +2,12 @@ package com.springboot.hospitalmanagement.service;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
+import org.apache.commons.lang3.time.DateUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -26,11 +28,15 @@ public class AppointmentService implements IAppointmentService{
 			List<Appointment> upcomingAppointments = new ArrayList<Appointment>();
 			SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");  
 		    Date date = new Date();  
-		    System.out.println(formatter.format(date));  
+		    Date truncatedDate = DateUtils.truncate(date, Calendar.DATE);
+		    
+		    System.out.println(formatter.format(date)); 
+		    System.out.println("truncatedDate: " + truncatedDate);
 			for (Appointment a : bookAppointment.findAll()) {
-				
-				System.out.println("id: " + a.getId() + "date: " + formatter.format(a.getDate()));
-				if ((a.getConfirmed()==null || !a.getConfirmed().contentEquals("Done")) && (a.getDate().after(date) || a.getDate().equals(date))) {
+				Date appointmentDate = DateUtils.truncate(a.getDate(), Calendar.DATE);
+			    
+				System.out.println("id: " + a.getId() + "date: " + appointmentDate);
+				if (appointmentDate.after(truncatedDate) || appointmentDate.equals(truncatedDate)) {
 					upcomingAppointments.add(a);
 				}
 			}
